@@ -1,3 +1,5 @@
+from typing import Dict, List, Any
+
 from pydantic import BaseModel
 
 
@@ -14,7 +16,7 @@ class AccountsRequest(BaseModel):
 
 
 class AccountsResponse(BaseModel):
-	id: str
+	site_info:Any
 	found: bool
 	detail: str
 
